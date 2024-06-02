@@ -1,16 +1,21 @@
 import Box from "@src/components/box/box";
 import Text from "@src/components/text/text";
+import theme from "@src/theme/theme";
 
 import Background from "./patterns/background/background";
 import Feed from "./patterns/feed/feed";
-import Menu from "./patterns/menu/menu";
 import Footer from "./patterns/footer/footer";
+import Menu from "./patterns/menu/menu";
 
 export default function HomeScreen() {
   return (
     <Box
       tag="main"
-      styleSheet={{ backgroundColor: "grey", flex: 1, alignItems: "center" }}
+      styleSheet={{
+        backgroundColor: theme.colors.positive.x100,
+        flex: 1,
+        alignItems: "center",
+      }}
     >
       <Background />
       <Menu />
